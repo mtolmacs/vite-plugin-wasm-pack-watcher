@@ -39,5 +39,11 @@
     "wasm-pack",
     "es-modules",
     "modules"
+  ],
+  "files": [
+    "/dist",
+    "/exports",
+    "LICENSE",
+    "README.md"
   ]
 }
