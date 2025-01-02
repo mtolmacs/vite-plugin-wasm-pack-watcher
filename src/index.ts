@@ -38,7 +38,6 @@ const builder = () => {
     });
     buildProcess.on("close", (code) => {
       if (code === 0 && ws) {
-        console.log("RELOADING");
         ws.send({ type: "full-reload", path: "*" });
       }
     });
