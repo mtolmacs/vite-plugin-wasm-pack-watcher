@@ -36,9 +36,9 @@ export default defineConfig({
    unchanged version!
 
 ```json
-  ...
-  dependencies: {
+{
+  "dependencies": {
     "<your wasm package name>": "link:./pkg"
   }
-  ...
+}
 ```
