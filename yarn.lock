@@ -1274,7 +1274,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:>=4":
+"typescript@npm:^4 || ^5":
   version: 5.7.2
   resolution: "typescript@npm:5.7.2"
   bin:
@@ -1284,7 +1284,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A>=4#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^4 || ^5#optional!builtin<compat/typescript>":
   version: 5.7.2
   resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"
   bin:
@@ -1324,14 +1324,15 @@ __metadata:
   resolution: "vite-plugin-wasm-pack-watcher@workspace:."
   dependencies:
     "@types/node": "npm:^22.10.3"
-    typescript: "npm:>=4"
-    vite: "npm:>=6"
+    esbuild: "npm:^0.24.2"
+    typescript: "npm:^4 || ^5"
+    vite: "npm:^2 || ^3 || ^4 || ^5 || ^6"
   peerDependencies:
-    vite: ">=6"
+    vite: ^2 || ^3 || ^4 || ^5 || ^6
   languageName: unknown
   linkType: soft
 
-"vite@npm:>=6":
+"vite@npm:^2 || ^3 || ^4 || ^5 || ^6":
   version: 6.0.6
   resolution: "vite@npm:6.0.6"
   dependencies:
