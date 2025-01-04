@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-wasm-pack-watcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mark Tolmacs <mark@lazycat.hu> (https://marktolmacs.com)",
   "homepage": "https://github.com/mtolmacs/vite-plugin-wasm-pack-watcher",
   "license": "MIT",
