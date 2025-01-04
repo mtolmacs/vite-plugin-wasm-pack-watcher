@@ -1,12 +1,15 @@
-import { spawn } from "child_process";
+import { ChildProcess, spawn } from "child_process";
 import { PluginOption, WebSocketServer } from "vite";
 
 let ws: WebSocketServer | null = null;
 
-const debounce = (fn: Function, delay: number) => {
+const debounce = <Args extends unknown[]>(
+  fn: (...args: Args) => void,
+  delay: number
+) => {
   let timer: NodeJS.Timeout | null = null;
 
-  return (...args) => {
+  return (...args: Args) => {
     if (timer) {
       clearTimeout(timer);
     }
@@ -18,7 +21,7 @@ const debounce = (fn: Function, delay: number) => {
 };
 
 const builder = () => {
-  let buildProcess: any = null;
+  let buildProcess: ChildProcess | null = null;
 
   return (buildCommand?: string) => {
     if (buildProcess) {
