@@ -1,0 +1,6 @@
+{
+  "name": "@mtolmacs/vite-plugin-wasm-pack-watcher",
+  "version": "1.0.1",
+  "license": "MIT",
+  "exports": "./exports/index.mjs"
+}
